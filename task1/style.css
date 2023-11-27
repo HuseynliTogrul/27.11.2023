@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: calc(100% - 34px);
+    padding: 18px;
+    border-radius: 6px;
+    margin: auto;
+    border: 1px solid #D1D5DB;
+}
+
+.header-profil{
+    display: flex;
+    gap: 16px;
+    margin-bottom: 18px;
+}
+
+.profil-info h2{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.profil-info p{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.header-button{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+}
+
+.header-button button{
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 6px;
+    text-decoration: none;
+    padding: 8px 0;
+    border: none;
+}
+
+.header-button .purple{
+    background: #4F46E5;
+    color: #FFF;
+}
+
+.header-button .light{
+    border: 1px solid #D1D5DB;
+    background: #FFF;
+}
+
+@media only screen and (min-width: 834px){  
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header-button{
+        display: inline-block;
+        text-align: start;
+    }
+
+    .header-button button{
+        padding: 8px 16px;
+    }
+
+    .header-button .purple{
+        margin-right: 16px;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    .container{
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        padding: 18px 40px;
+    }
+
+    .header-profil{
+        margin: 0;
+        align-items: center;
+    }
+}
